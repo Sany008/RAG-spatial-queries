@@ -1,3 +1,4 @@
+__import__('pysqlite3')
 import chromadb
 from chromadb.config import Settings
 from typing import List, Dict, Any, Optional, Tuple
@@ -7,8 +8,12 @@ import logging
 import json
 from config import config
 from rag.embedding_model import GeminiEmbeddingModel
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 
 logger = logging.getLogger(__name__)
+
 
 class GeographicVectorStore:
     """Vector store for geographic data using ChromaDB."""
