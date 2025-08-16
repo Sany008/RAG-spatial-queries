@@ -1,7 +1,12 @@
+***
+
 # 🌍 Geographic Information RAG System
 
-A comprehensive Retrieval-Augmented Generation (RAG) system that combines geographic data, satellite imagery, and location-based information to answer spatial queries and provide location-specific insights. Built with modern AI technologies including Google Gemini LLM, ChromaDB vector database, and advanced geospatial analysis capabilities.
+**A Retrieval-Augmented Generation (RAG) system for geographic intelligence** that integrates **geographic data, location-based metadata, and satellite imagery** to handle **spatial queries** and generate **location-specific insights**.
 
+✅ **Deployed App**: [RAG-spatial-queries (Render Deployment)](https://rag-spatial-queries.onrender.com/)
+
+***
 ## 🚀 Features
 
 ### Core RAG Capabilities
@@ -284,27 +289,6 @@ python -c "from utils.data_utils import data_utils; print('Data utils working')"
 streamlit run app.py --server.port 8501
 ```
 
-### Production Deployment
-```bash
-# Using Streamlit Cloud
-streamlit deploy app.py
-
-# Using Docker
-docker build -t geographic-rag .
-docker run -p 8501:8501 geographic-rag
-
-# Using Heroku
-heroku create your-app-name
-git push heroku main
-```
-
-### Environment Configuration
-```bash
-# Production environment variables
-export GOOGLE_API_KEY="your_production_key"
-export STREAMLIT_SERVER_PORT=8501
-export STREAMLIT_SERVER_ADDRESS=0.0.0.0
-```
 
 ## 🔧 Troubleshooting
 
@@ -368,20 +352,6 @@ lsof -i :8501
 - **Database Optimization**: Advanced indexing and caching
 - **Load Balancing**: High-availability deployment
 
-## 🤝 Contributing
-
-### Development Setup
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests and documentation
-5. Submit a pull request
-
-### Code Standards
-- **Python**: Follow PEP 8 guidelines
-- **Documentation**: Comprehensive docstrings
-- **Testing**: Unit tests for new features
-- **Type Hints**: Use type annotations
 
 ### Testing Guidelines
 ```bash
@@ -394,26 +364,23 @@ python -m pytest --cov=.
 # Run specific test file
 python -m pytest test_system.py
 ```
+***
+Deployed via **Render**:
 
-## 📄 License
+- App URL: [RAG-spatial-queries](https://rag-spatial-queries.onrender.com/)
+- Configured with `.env` for secure **Gemini API key**
+- Supports load balancing and scalable caching
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+***
 
-## 🙏 Acknowledgments
+## Deliverables
 
-- **Google Gemini**: Advanced language model capabilities
-- **ChromaDB**: High-performance vector database
-- **Streamlit**: Interactive web application framework
-- **DeepEval**: RAG system evaluation framework
-- **Open Source Community**: Various geospatial and AI libraries
+✔️ Fully deployed **Streamlit App on Render**
+✔️ GitHub Repository with clean **code + documentation**
+✔️ `README.md` (this file) explaining scope, setup, usage
+✔️ Performance evaluation with metrics
 
-## 📞 Support
-
-### Getting Help
-- **Issues**: Create GitHub issues for bugs and feature requests
-- **Documentation**: Check this README and inline code comments
-- **Community**: Join our discussion forum
-- **Email**: Contact the development team
+***
 
 ### Useful Resources
 - [Google Gemini Documentation](https://ai.google.dev/docs)
@@ -422,7 +389,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [DeepEval Documentation](https://docs.confident-ai.com)
 
 ---
+***
 
-**Built with ❤️ for Geographic Information Science and AI Innovation**
+### 🔗 Quick Links
 
-*Last updated: August 2024*
+- **GitHub Repo**: [https://github.com/Sany008/RAG-spatial-queries](https://github.com/Sany008/RAG-spatial-queries)
+- **Live App**: [RAG-spatial-queries (on Render)](https://rag-spatial-queries.onrender.com/)
+
+***
+
