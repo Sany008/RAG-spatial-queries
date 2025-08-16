@@ -1,18 +1,29 @@
+# Core LangChain + Google GenAI
 langchain
 langchain-google-genai
 google-generativeai
+
+# App framework
 streamlit
-chromadb
+streamlit-folium
+
+# Vector DB - use latest version for better SQLite compatibility
+chromadb>=0.4.22
+
+# Data handling
 pandas
 numpy
 geopandas
 shapely
 folium
-streamlit-folium
+
+# Utilities
 pillow
 requests
-deepeval
 pydantic
 python-dotenv
 geopy
 pyproj
+
+# Evaluation
+deepeval
